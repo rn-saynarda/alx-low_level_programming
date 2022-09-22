@@ -1,22 +1,16 @@
-#include "main.h" 
-  
- /** 
-  * _strcat - concatenates 2 strings 
-  * 
-  * @dest: destination array 
-  * @src: source array 
-  * 
-  * Return: destination array 
+/** 
+  *_strcat - serves to concatenate @src to @dest 
+  * @src: the source string to be appended to @dest 
+  * @dest: the destiation string to be concatenated upon 
+  * Return:pointer to the resulting string 
   */ 
  char *_strcat(char *dest, char *src) 
  { 
-         char *ptr = dest; 
-  
-         while (*ptr != 0) 
-                 ptr++; 
-         while (*src != 0) 
-                 *ptr++ = *src++; 
-         *ptr = 0; 
-  
-         return (dest); 
+ int index = 0; 
+ int dest_len = 0; 
+ while (dest[index++]) 
+ dest_len++; 
+ for (index = 0; src[index]; index++) 
+ dest[dest_len++] = src[index]; 
+ return (dest); 
  }
