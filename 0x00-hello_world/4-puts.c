@@ -10,4 +10,3 @@ int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle ");
 }
-[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B
