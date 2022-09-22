@@ -1,18 +1,19 @@
-#include "main.h" 
- #include <stdio.h> 
-  
- /** 
-  * main - check the code 
-  * 
-  * Return: Always 0. 
-  */ 
- int main(void) 
- { 
-     char str[] = "Look up!\n"; 
-     char *ptr; 
-  
-     ptr = string_toupper(str); 
-     printf("%s", ptr); 
-     printf("%s", str); 
-     return (0); 
- }
+#include "main.h"
+
+/**
+ * string_toupper - Changes all lowercase letters
+ * of a string to uppercase.
+ * @str: The string to be changed.
+ * Return: A pointer to the changed string.
+ */
+char *string_toupper(char *str)
+{
+int index = 0;
+while (str[index])
+{
+if (str[index] >= 'a' && str[index] <= 'z')
+str[index] -= 32;
+index++;
+}
+return (str);
+}}
