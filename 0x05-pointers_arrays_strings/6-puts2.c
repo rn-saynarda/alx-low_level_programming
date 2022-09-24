@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * puts2 - prints string characters
- * @str: the used string used as a reference
- * Return: 0
+ * puts2 - print every other character of a string
+ * @str: the string to print
+ *
+ * Return: void
  */
 void puts2(char *str)
 {
-int i = 0;
-while (str[i] != '\0')
+if (str)
 {
-if (i % 2 == 0)
-{
-_putchar(str[i]);
-}
-i++;
-}
+do {
+if (*str)
+_putchar(*str++);
+} while (*str++);
 _putchar('\n');
+}
 }
